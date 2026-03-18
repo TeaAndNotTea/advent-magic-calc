@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import time
 
-MAGNM_DEFAULT = 11111  # wizcom_1.magnm default in your build
+MAGNM_DEFAULT = 11111  # wizcom_1.magnm default
 
 
 def datime_like_adventure():
@@ -25,7 +25,7 @@ def compute_expected_response(challenge_word: str, magnm: int = MAGNM_DEFAULT) -
     Compute the 5-letter response the game expects, given the 5-letter
     challenge printed by the game (e.g. 'JDGXL').
 
-    This is a direct translation of the second stage of wizard_() in your C file.
+    This is a direct translation of the second stage of wizard_() in the C file.
     """
     w = challenge_word.strip().upper()
     if len(w) != 5 or not w.isalpha():
